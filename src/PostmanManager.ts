@@ -13,8 +13,11 @@ export class PostmanManager {
         return JSON.stringify(dl);
     }
 
-    private async download(url: string) {
-        return libx.node.exec(`curl -sb --location --request GET "${url}"`, true, true);
+    private async downloadViaCurl(url: string) {
+        let ret = libx.node.exec(`curl -sb --location --request GET "${url}"`, true, true);
+        let obj = JSON.parse(ret + '}');
+        obj = obj.collection;
+        return ret;
     }
 
     private async downloadCollection(collectionId: string) {
@@ -25,8 +28,6 @@ export class PostmanManager {
     }
 
     private cleanupCollection(content: string | any) {
-        // let obj = JSON.parse(content + '}');
-        // obj = obj.collection;
         let obj = content.collection;
 
         // obj.item = (obj.item as any[]).filter((x) => x.item?.length != 0);
