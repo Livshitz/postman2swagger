@@ -1,5 +1,5 @@
 {
-    "name": "postman2swagger",
+    "name": "post2swag",
     "version": "0.0.1",
     "main": "index.js",
     "license": "MIT",
@@ -14,7 +14,7 @@
         "bump": "./bump.sh"
     },
     "bin": {
-        "postman2swagger": "bin/cli.sh"
+        "post2swag": "bin/cli.sh"
     },
     "files": [
         "build/**",

@@ -71,7 +71,7 @@ export class Script implements IScript<typeof conf> {
     private printHelp() {
         console.log(`
     Usage:
-    $ postman2swagger <input>
+    $ post2swag <input>
 
     Options:
     -q                  Quite mode, outputs only swagger result
@@ -81,7 +81,7 @@ export class Script implements IScript<typeof conf> {
     --output            Specify path for the output swagger yaml
 
     Example:
-    $ postman2swagger --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
+    $ post2swag --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
 `);
         exit(0);
     }
