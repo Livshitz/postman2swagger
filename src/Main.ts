@@ -32,7 +32,7 @@ const conf = {
 // node build/Main.js --env="staging" --postmanApiKey="<key>" --collectionId="<colId>" -q
 // node build/Main.js --postmanApiKey="<key>" --collectionId="<colId>" --skipDL
 // node build/Main.js --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml"
-class Script implements IScript<typeof conf> {
+export class Script implements IScript<typeof conf> {
     public async executeAsScript(config: typeof conf, env: string = Program.args.env, envConf: typeof conf.envs.prod): Promise<void> {
         if (Program.args.h || Program.args.help) return this.printHelp();
 
