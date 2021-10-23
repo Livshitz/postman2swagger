@@ -74,6 +74,7 @@ export class Script implements IScript<typeof conf> {
     $ postman-to-swagger <input>
 
     Options:
+    -h                  Display help
     -q                  Quite mode, outputs only swagger result
     --postmanApiKey     Postman API key to retrieve the collection
     --collectionId      Postman collection ID
