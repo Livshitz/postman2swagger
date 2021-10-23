@@ -1,6 +1,6 @@
 {
     "name": "postman-to-swagger",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "build/Main.js",
     "license": "MIT",
     "author": "Livshitz",
