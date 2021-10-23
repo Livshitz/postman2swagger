@@ -10,7 +10,16 @@ CLI tool to convert Postman collection to swagger (OpenAPI) by providing Postman
 
 ## Use:
 
+Run without installing:
+
 ```sh
+$ npx postman-to-swagger --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
+```
+
+Install globally:
+
+```sh
+$ npm install -g postman-to-swagger
 $ postman-to-swagger --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
 ```
 
