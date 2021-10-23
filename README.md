@@ -1,4 +1,4 @@
-# post2swag
+# postman-to-swagger
 
 CLI tool to convert Postman collection to swagger (OpenAPI) by providing Postman API key, collection Id and output swagger into file or std-out.
 
@@ -11,14 +11,14 @@ CLI tool to convert Postman collection to swagger (OpenAPI) by providing Postman
 ## Use:
 
 ```sh
-$ post2swag --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
+$ postman-to-swagger --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
 ```
 
 ### Options:
 
 ```
 Usage:
-    $ post2swag <input>
+    $ postman-to-swagger <input>
 
     Options:
     -q                  Quite mode, outputs only swagger result
@@ -28,7 +28,7 @@ Usage:
     --output            Specify path for the output swagger yaml
 
     Example:
-    $ post2swag --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
+    $ postman-to-swagger --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
 ```
 
 ## Develop:

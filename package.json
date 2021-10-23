@@ -1,7 +1,7 @@
 {
-    "name": "post2swag",
-    "version": "0.0.2",
-    "main": "index.js",
+    "name": "postman-to-swagger",
+    "version": "0.0.3",
+    "main": "build/Main.js",
     "license": "MIT",
     "author": "Livshitz",
     "scripts": {
@@ -14,7 +14,7 @@
         "bump": "./bump.sh"
     },
     "bin": {
-        "post2swag": "bin/cli.sh"
+        "postman-to-swagger": "bin/cli.sh"
     },
     "files": [
         "build/**",
