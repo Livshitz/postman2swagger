@@ -25,7 +25,7 @@
         "*.ts"
     ],
     "dependencies": {
-        "libx.js": "^2.0.1",
+        "libx.js": "^2.0.2",
         "postman-to-openapi": "^1.18.0"
     },
     "devDependencies": {
