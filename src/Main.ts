@@ -79,6 +79,7 @@ export class Script implements IScript<typeof conf> {
     --collectionId      Postman collection ID
     --input             Specify path to local Postman collection json, will skip downloading via API
     --output            Specify path for the output swagger yaml
+    --skipDL            Skip downloading, will reuse locally cached collection
 
     Example:
     $ postman-to-swagger --postmanApiKey="<key>" --collectionId="<colId>" --output="./output.yml" -q
