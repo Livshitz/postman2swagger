@@ -1,6 +1,7 @@
 # postman-to-swagger
 
-CLI tool to convert Postman collection to swagger (OpenAPI) by providing Postman API key, collection Id and output swagger into file or std-out.
+CLI tool to convert Postman collection to swagger (OpenAPI) by providing Postman API key, collection Id and output swagger into file or std-out.  
+Wrapping [`postman-to-openapi`](https://github.com/joolfe/postman-to-openapi) package to make it easier to be used with Postman collections.
 
 ## Features:
 
